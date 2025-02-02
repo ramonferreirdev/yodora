@@ -54,8 +54,11 @@ a {
     color: white;
 }
 
-/*DOBRA 1 */
+.menu .mobile {
+    display: none;
+}
 
+/*DOBRA 1 */
 .dobra1 {
     display: flex;
     width: 80%;
@@ -329,3 +332,96 @@ footer .links .info p {
     line-height: 24px;
 }
 
+/*Mobile*/
+@media screen and (max-width: 1280px) {
+    .menu .esquerda a {
+        display: none;
+    }
+
+    .menu .direita {
+        display: none;
+    }
+
+    .menu .mobile {
+        display: block;
+    }
+
+    .dobra1 {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .dobra1 p {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .dobra2 .fundo .container .fotos {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .dobra2 .fundo .container .numeros {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .dobra2 .fundo .container .numeros .direita {
+        margin-top: 40px;
+    }
+
+    .dobra2 .fundo .container .numeros .esquerda{
+        flex-direction: column;
+    }
+
+    .dobra3 {
+        flex-wrap: wrap;
+    }
+
+    .dobra3 .motivos {
+        justify-content: center;
+        text-align: center;
+        gap: 40px;
+        margin-top: 40px;
+    }
+
+    .dobra3 .motivos .razao{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    /*Dobra4*/
+
+    .dobra4 {
+        width: 90%;
+        padding: 116px 10px;
+    }
+    .dobra4 h2 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .dobra4 p {
+        text-align: center;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    footer .links {
+        flex-direction: column;
+    }
+
+    footer .images {
+        order: 100;
+        margin-top: 32px;
+        align-self: center;
+    }
+
+}
